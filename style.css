@@ -1,0 +1,83 @@
+body { margin: 0; padding: 0;}
+
+
+.header {
+	border-style: solid;
+	border-color: black;
+	display: flex;
+	justify-content: center;
+	height: 25vh;
+	width: 100vw;
+	background-color: black;
+
+	
+}
+
+.headerLogoContainer{
+	border-style: solid;
+	border-color: white;
+	width: 21vw;
+	height: 8vh;
+}
+
+.mainPage {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-style: solid;
+	border-color: black;
+	height: 75vh;
+	width: 100vw;
+	background-color: lightpink;
+}
+
+.logoAndBlurb {
+	border-style: solid;
+	border-color: black;
+	height: 50vh;
+	width: 30vw;
+	background-color: lightgray;
+}
+
+.tabsContainer {
+	display: flex;
+	border-style: solid;
+	border-color: white;
+	margin-left: 20vw;
+	color: white;
+
+}
+
+.logoDivContainer {
+	display: flex;
+	border-style: solid;
+	border-color: white;
+	margin-left: 10vw;
+	color: white;
+		text-indent: 20vw;
+}
+
+.tabs {
+	height: 5vh;
+	width: 7vw;
+	border-style: solid;
+	border-color: white;
+	color: white;
+	list-style: none;
+	margin-top: 5.5vw;
+}
+
+.aboutUsBtn {
+	height: 5vh;
+	width: 14vh;
+
+}
+
+.mainPageLogoImg{
+	align-self: flex-end;
+	height: 10vw;
+	width: 10vw;
+	border-radius: 50%;
+	margin-left: 5vw;
+	
+}
