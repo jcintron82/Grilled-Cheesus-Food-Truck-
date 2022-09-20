@@ -1,6 +1,6 @@
 body { margin: 0; padding: 0;}
 
-
+/* the code below controls main header UI */
 .header {
 	border-style: solid;
 	border-color: black;
@@ -9,8 +9,6 @@ body { margin: 0; padding: 0;}
 	height: 25vh;
 	width: 100vw;
 	background-color: black;
-
-	
 }
 
 .headerLogoContainer{
@@ -18,25 +16,6 @@ body { margin: 0; padding: 0;}
 	border-color: white;
 	width: 21vw;
 	height: 8vh;
-}
-
-.mainPage {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border-style: solid;
-	border-color: black;
-	height: 75vh;
-	width: 100vw;
-	background-color: lightpink;
-}
-
-.logoAndBlurb {
-	border-style: solid;
-	border-color: black;
-	height: 50vh;
-	width: 30vw;
-	background-color: lightgray;
 }
 
 .tabsContainer {
@@ -72,6 +51,92 @@ body { margin: 0; padding: 0;}
 	width: 14vh;
 
 }
+
+/*The code below is styling for the body of the main page*/
+
+.mainPage {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-style: solid;
+	border-color: black;
+	height: 75vh;
+	width: 100vw;
+	background-color: lightpink;
+}
+
+.logoAndBlurb {
+	border-style: solid;
+	border-color: black;
+	height: 50vh;
+	width: 30vw;
+	background-color: lightgray;
+}
+
+
+.mainPageLogoImg{
+	align-self: flex-end;
+	height: 10vw;
+	width: 10vw;
+	border-radius: 50%;
+	margin-left: 5vw;
+	
+}
+
+/*The code below is styling for the body of the menu page*/
+
+.menuMainPage {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-style: solid;
+	border-color: black;
+	height: 75vh;
+	width: 100vw;
+	background-color: lightpink;
+}
+
+.menuBodyContainer {
+	border-style: solid;
+	border-color: black;
+	height: 50vh;
+	width: 30vw;
+	background-color: white;
+}
+
+
+.mainPageLogoImg{
+	align-self: flex-end;
+	height: 10vw;
+	width: 10vw;
+	border-radius: 50%;
+	margin-left: 5vw;
+	
+}
+
+
+
+/*The code below is styling for the body of the contact us page*/
+
+.ContactUsMainPage {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-style: solid;
+	border-color: black;
+	height: 75vh;
+	width: 100vw;
+	background-color: lightpink;
+}
+
+.contactUsInfoContainer {
+	border-style: solid;
+	border-color: black;
+	height: 50vh;
+	width: 30vw;
+	background-color: purple;
+}
+
 
 .mainPageLogoImg{
 	align-self: flex-end;
