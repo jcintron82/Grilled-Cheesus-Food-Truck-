@@ -1,44 +1,38 @@
+//FUNCTION TO CLEAR THE DOM WHEN AN EVENT LISTENER IN THE INDEX FILE IS CALLED
+export  function clearDom() {
+  content.innerHTML = '';
+}
 
-//Variables for basic page layout 
+//VARIABLES FOR BASIC PAGE LAYOUT
 let content = document.getElementById('content');
 const div1 = document.createElement('div')
 const header = document.createElement('header')
 const blurbBox = document.createElement('div')
 
-//Variables for the logo in the header
+//VARIABLES FOR LOGO IN HEADER
 const logoDivContainer = document.createElement('div')
 const logo = document.createElement('img');
 
-//for the nav buttons
+//VARIABLES FOR NAV BUTTONS
 const tabs = document.createElement('ul');
 export const aboutUsTab = document.createElement('li')
-export const aboutUsTabBtn =document.createElement('button')
+export const aboutUsTabBtnMenu=document.createElement('button')
 export const menuTab = document.createElement('li')
 export const menuTabBtn =document.createElement('button')
 export const contactUsTab = document.createElement('li')
-export const contactUsTabBtn =document.createElement('button')
+export const contactUsTabBtnMenu =document.createElement('button')
 
-export  function clearDom() {
-  content.innerHTML = '';
-}
-
-
+//RENDERS THE MENU PAGE
 export function createMenuPage() {
 
-
-
+  //creates new div elements
  function newDiv(parent, newdiv, style, ){
     parent.appendChild(newdiv);
     newdiv.className = style;
   
 }
-//function to add text to newly created divs
- function addText(parent,text) {
-    let newText = document.createTextNode(text);
-    parent.appendChild(newText)
-}
 
-//function to add images
+//adds images to element(s)
  function addImage(parent, child, src, style) {
     child.src = src;
     parent.appendChild(child)
@@ -46,36 +40,36 @@ export function createMenuPage() {
 
 }
 
-
-newDiv(content, header, 'header');
+//CREATES THE HEADER
+newDiv(content, header, 'header2');
 newDiv(header, tabs, 'tabsContainer')
 newDiv(tabs, aboutUsTab, 'tabs')
 newDiv(tabs, menuTab, 'tabs')
 newDiv(tabs, contactUsTab, 'tabs')
 newDiv(header, logoDivContainer, 'logoDivContainer' )
 
-//creates buttons in header
 
-aboutUsTab.appendChild(aboutUsTabBtn)
-aboutUsTabBtn.className = 'aboutUsBtn'
+//CREATES BUTTONS IN HEADER
+aboutUsTab.appendChild(aboutUsTabBtnMenu);
+aboutUsTabBtnMenu.className = 'aboutUsBtn';
+aboutUsTabBtnMenu.textContent = 'About Us';
 
-menuTab.appendChild(menuTabBtn)
-menuTabBtn.className = 'aboutUsBtn'
+menuTab.appendChild(menuTabBtn);
+menuTabBtn.className = 'aboutUsBtn';
+menuTabBtn.textContent = "Menu";
 
-contactUsTab.appendChild(contactUsTabBtn);
-contactUsTabBtn.className = 'aboutUsBtn'
+contactUsTab.appendChild(contactUsTabBtnMenu);
+contactUsTabBtnMenu.className = 'aboutUsBtn'
+contactUsTabBtnMenu.textContent = 'Contact Us'
 
-//adds text to header elements
-addText(aboutUsTabBtn, 'About Us');
-addText(menuTabBtn, 'Menu');
-addText(contactUsTabBtn, 'Contact Us');
-addText(logoDivContainer, 'Grilled Cheesus')
+//ADDS TEXT TO HEADER LOGO CONTAINER
+logoDivContainer.textContent = 'Grilled Cheesus'
 
-//adds logo to header
+//ADDS LOGO TO HEADER LOGO CONTAINER
 addImage(logoDivContainer, logo, 'cheese.png', 'mainPageLogoImg')
 
 
-//creates main body 
+//CREATES MAIN BODY
 newDiv(content, div1, 'menuMainPage' );
 newDiv(div1, blurbBox, 'menuBodyContainer');
 }

@@ -28,12 +28,6 @@ export function createMainPage() {
   
 }
 
-//function to add text to newly created divs
- 	 function addText(parent,text) {
-	 let newText = document.createTextNode(text);
-	 parent.appendChild(newText)
-}
-
 //function
 	 function addImage(parent, child, src, style) {
 	 child.src = src;
@@ -41,7 +35,7 @@ export function createMainPage() {
 	 logo.className = style
 
 }
-//creates header
+//CREATES HEADER
 
 newDiv(content, header, 'header');
 newDiv(header, tabs, 'tabsContainer')
@@ -51,32 +45,28 @@ newDiv(tabs, contactUsTab, 'tabs')
 newDiv(header, logoDivContainer, 'logoDivContainer' )
 
 
-//creates buttons in header
+//CREATES BUTTONS IN HEADER
+aboutUsTab.appendChild(aboutUsTabBtn);
+aboutUsTabBtn.className = 'aboutUsBtn';
+aboutUsTabBtn.textContent = 'About Us';
 
-aboutUsTab.appendChild(aboutUsTabBtn)
-aboutUsTabBtn.className = 'aboutUsBtn'
-
-menuTab.appendChild(menuTabBtn)
-menuTabBtn.className = 'aboutUsBtn'
+menuTab.appendChild(menuTabBtn);
+menuTabBtn.className = 'aboutUsBtn';
+menuTabBtn.textContent = "Menu";
 
 contactUsTab.appendChild(contactUsTabBtn);
 contactUsTabBtn.className = 'aboutUsBtn'
+contactUsTabBtn.textContent = 'Contact Us'
 
+//ADDS TEXT TO HEADER LOGO CONTAINER
+logoDivContainer.textContent = 'Grilled Cheesus'
 
-//creates main body 
-
+//CREATES MAIN BODY
 newDiv(content, div1, 'mainPage' );
 newDiv(div1, blurbBox, 'logoAndBlurb');
 
 
-
-//Adds text to aforementioned rendered divs
-
-addText(aboutUsTabBtn, 'About Us');
-addText(menuTabBtn, 'Menu');
-addText(contactUsTabBtn, 'Contact Us');
-addText(logoDivContainer, 'Grilled Cheesus')
-
+//ADDS LOGO TO HEADER
 addImage(logoDivContainer, logo, 'cheese.png', 'mainPageLogoImg')
 }
 

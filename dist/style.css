@@ -11,6 +11,17 @@ body { margin: 0; padding: 0;}
 	background-color: black;
 }
 
+.header2{
+	border-style: solid;
+	border-color: black;
+	display: flex;
+	justify-content: center;
+	height: 25vh;
+	width: 100vw;
+	background-color: red;
+}
+
+
 .headerLogoContainer{
 	border-style: solid;
 	border-color: white;

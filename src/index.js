@@ -1,37 +1,60 @@
 import  {aboutUsTab, menuTab, contactUsTab, aboutUsTabBtn,menuTabBtn,
 contactUsTabBtn,createMainPage} from './mainpage.js'
 
-import {createMenuPage, clearDom} from './menupage.js'
+import {createMenuPage, clearDom, aboutUsTabBtnMenu, contactUsTabBtnMenu} from './menupage.js'
 
-import {createContactUsPage} from './contactpage.js'
+import {createContactUsPage, aboutUsTabBtnContact,contactUsTabBtnContact, menuTabBtnContact} from './contactpage.js'
 
-//Renders the content divs for the main page and assigns classes
-
-createMainPage()
-
+//RENDERS CONTENT FOR ORIGINAL PAGE LOAD
+createMainPage();
 
 
-// END OF MAIN PAGE RENDER
 
-//Event listeners for the navigation tabs
+
+//EVENT LISTENERS FOR THE ABOUT US MAIN PAGE
 aboutUsTabBtn.addEventListener('click', function () {
 	clearDom()
 	createMainPage();
 
 })
 
-
-
-
 menuTabBtn.addEventListener('click', function () {
-	clearDom()
+clearDom();
 	createMenuPage();
 	
 })
 
-
 contactUsTabBtn.addEventListener('click', function () {
-	clearDom()
+clearDom();
 	createContactUsPage();
 })
 
+
+
+//EVENT LISTENERS FOR THE MENU PAGE
+aboutUsTabBtnMenu.addEventListener('click', function () {
+	clearDom();
+	createMainPage();
+
+})
+
+contactUsTabBtnMenu.addEventListener('click', function () {
+	clearDom();
+	createContactUsPage();
+
+})
+
+
+
+//EVENT LISTENERS FOR THE CONTACT US PAGE
+aboutUsTabBtnContact.addEventListener('click', function () {
+	clearDom();
+	createMainPage();
+
+})
+
+menuTabBtnContact.addEventListener('click', function () {
+	clearDom();
+	createMenuPage();
+	
+})
