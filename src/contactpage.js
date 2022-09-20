@@ -18,14 +18,16 @@ export const menuTabBtn =document.createElement('button')
 export const contactUsTab = document.createElement('li')
 export const contactUsTabBtn =document.createElement('button')
 
-export  function clearDom() {
+function clearDom(parent,child) {
   content.innerHTML = '';
 }
 
+export function createContactUsPage() {
 
-export function createMenuPage() {
-
-
+  function clearDom(parent,child) {
+  content.innerHTML = '';
+}
+  clearDom()
 
  function newDiv(parent, newdiv, style, ){
     parent.appendChild(newdiv);
@@ -76,7 +78,7 @@ addImage(logoDivContainer, logo, 'cheese.png', 'mainPageLogoImg')
 
 
 //creates main body 
-newDiv(content, div1, 'menuMainPage' );
-newDiv(div1, blurbBox, 'menuBodyContainer');
+newDiv(content, div1, 'ContactUsMainPage' );
+newDiv(div1, blurbBox, 'contactUsInfoContainer');
 }
 

@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/jcintron82/Grilled-Cheesus-Food-Truck-#readme",
   "devDependencies": {
+    "css-loader": "^6.7.1",
     "file-loader": "^6.2.0",
     "url-loader": "^4.1.1",
     "webpack": "^5.74.0",

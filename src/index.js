@@ -1,59 +1,37 @@
-import  {content, div1, header,blurbBox,newDiv, tab, tabs, aboutUsTab, menuTab, contactUsTab, aboutUsTabBtn,menuTabBtn,
-contactUsTabBtn, addText, logoDivContainer, logo, addImage, createMainPage} from './mainpage.js'
+import  {aboutUsTab, menuTab, contactUsTab, aboutUsTabBtn,menuTabBtn,
+contactUsTabBtn,createMainPage} from './mainpage.js'
 
-import { } from './menupage.js'
+import {createMenuPage, clearDom} from './menupage.js'
+
+import {createContactUsPage} from './contactpage.js'
 
 //Renders the content divs for the main page and assigns classes
 
-newDiv(content, header, 'header');
-newDiv(content, div1, 'mainPage' );
-newDiv(div1, blurbBox, 'logoAndBlurb');
-newDiv(header, tabs, 'tabsContainer')
-newDiv(tabs, aboutUsTab, 'tabs')
-newDiv(tabs, menuTab, 'tabs')
-newDiv(tabs, contactUsTab, 'tabs')
-newDiv(header, logoDivContainer, 'logoDivContainer' )
-
-
-aboutUsTab.appendChild(aboutUsTabBtn)
-aboutUsTabBtn.className = 'aboutUsBtn'
-
-menuTab.appendChild(menuTabBtn)
-menuTabBtn.className = 'aboutUsBtn'
-
-contactUsTab.appendChild(contactUsTabBtn);
-contactUsTabBtn.className = 'aboutUsBtn'
+createMainPage()
 
 
 
-
-
-
-
-
-//Adds text to aforementioned rendered divs
-addText(aboutUsTabBtn, 'About Us');
-addText(menuTabBtn, 'Menu');
-addText(contactUsTabBtn, 'Contact Us');
-addText(logoDivContainer, 'Grilled Cheesus')
-
-
-addImage(logoDivContainer, logo, 'cheese.png', 'mainPageLogoImg')
-
-
+// END OF MAIN PAGE RENDER
 
 //Event listeners for the navigation tabs
 aboutUsTabBtn.addEventListener('click', function () {
+	clearDom()
 	createMainPage();
 
 })
 
+
+
+
 menuTabBtn.addEventListener('click', function () {
+	clearDom()
+	createMenuPage();
 	
 })
 
 
 contactUsTabBtn.addEventListener('click', function () {
-	alert('hi')
+	clearDom()
+	createContactUsPage();
 })
 

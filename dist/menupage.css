@@ -1,0 +1,9 @@
+.header2 {
+	border-style: solid;
+	border-color: black;
+	display: flex;
+	justify-content: center;
+	height: 25vh;
+	width: 100vw;
+	background-color: lightsteelblue;
+}
