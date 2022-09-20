@@ -1,4 +1,5 @@
-body { margin: 0; padding: 0;}
+body { margin: 0; padding: 0; overflow: hidden;}
+
 
 /* the code below controls main header UI */
 .header {
@@ -31,35 +32,53 @@ body { margin: 0; padding: 0;}
 
 .tabsContainer {
 	display: flex;
-	border-style: solid;
-	border-color: white;
-	margin-left: 20vw;
+	height: 5vh;
+	justify-content: center;
+	align-items: center;
 	color: white;
+	margin: 20vh 0vw 0vh 30vw;
 
 }
 
 .logoDivContainer {
 	display: flex;
+	flex-direction: column;
+	color: white;
+	width: 42vw;
+
+}
+
+.grilled {
+	text-indent: 5vw;
 	border-style: solid;
 	border-color: white;
-	margin-left: 10vw;
 	color: white;
-		text-indent: 20vw;
+}
+
+.cheesus {
+	text-indent: 10vw;
+	border-style: solid;
+	border-color: white;
+	color: white;
 }
 
 .tabs {
-	height: 5vh;
-	width: 7vw;
-	border-style: solid;
-	border-color: white;
-	color: white;
 	list-style: none;
-	margin-top: 5.5vw;
+	
+}
+
+.navBtns {
+	margin-top: .5vh;
+	height: 5vh;
+	width: 14vh;
+	margin-left: 1vw;
 }
 
 .aboutUsBtn {
+	margin-top: .5vh;
 	height: 5vh;
 	width: 14vh;
+	margin-left: 5vw;
 
 }
 
@@ -69,18 +88,26 @@ body { margin: 0; padding: 0;}
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-style: solid;
-	border-color: black;
 	height: 75vh;
 	width: 100vw;
 	background-color: lightpink;
 }
 
+.blurbHead {
+	border:  solid black;
+	height: 10vh;
+}
+
+.blurbBody {
+	border:  solid black;
+	height: 25vh;
+	text-align: center;
+
+}
+
 .logoAndBlurb {
-	border-style: solid;
-	border-color: black;
-	height: 50vh;
-	width: 30vw;
+	height: 70vh;
+	width: 50vw;
 	background-color: lightgray;
 }
 
@@ -90,7 +117,7 @@ body { margin: 0; padding: 0;}
 	height: 10vw;
 	width: 10vw;
 	border-radius: 50%;
-	margin-left: 5vw;
+	margin-left:5vw;
 	
 }
 
@@ -100,21 +127,47 @@ body { margin: 0; padding: 0;}
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-style: solid;
-	border-color: black;
 	height: 75vh;
 	width: 100vw;
-	background-color: lightpink;
+	background-color: #FDFDFD;
+	justify-content: space-evenly;
+}
+/*The code below is styling for the recommended dishes portion of the menu page*/
+.recommendedDishesContainer {
+	height: 65vh;
+	width: 45vw;
+	background-color: #E7E2DF;
 }
 
-.menuBodyContainer {
+.recommendedDishesHeader{
+	display: flex;
 	border-style: solid;
-	border-color: black;
-	height: 50vh;
-	width: 30vw;
-	background-color: white;
+	border-color: red;
+	height: 10vh;
 }
 
+
+.recommendedDishesContentContainer{
+	display: flex;
+	flex-wrap:wrap ;
+
+}
+
+.recDishes {
+	border-style: solid;
+	border-color: red;
+	height: 20vh;
+	width: 20vw;
+	margin: 1vw;
+}
+
+/*The code below is styling for the side dishes portion of the menu page*/
+
+.sideDishesContainer{
+	height: 65vh;
+	width: 45vw;
+	background-color: black;
+}
 
 .mainPageLogoImg{
 	align-self: flex-end;
@@ -125,7 +178,12 @@ body { margin: 0; padding: 0;}
 	
 }
 
-
+.sideDishesContainerFooter{
+	display: flex;
+	border-style: solid;
+	border-color: red;
+	height: 3vh;
+}
 
 /*The code below is styling for the body of the contact us page*/
 
@@ -133,8 +191,6 @@ body { margin: 0; padding: 0;}
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-style: solid;
-	border-color: black;
 	height: 75vh;
 	width: 100vw;
 	background-color: lightpink;

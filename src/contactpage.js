@@ -7,6 +7,8 @@ const blurbBox = document.createElement('div')
 //VARIABLES FOR LOGO IN HEADER
 const logoDivContainer = document.createElement('div')
 const logo = document.createElement('img');
+const grilledDiv = document.createElement('div')
+const cheesusDiv = document.createElement('div')
 
 //VARIABLES FOR NAV BUTTONS
 const tabs = document.createElement('ul');
@@ -40,6 +42,8 @@ newDiv(tabs, aboutUsTab, 'tabs')
 newDiv(tabs, menuTab, 'tabs')
 newDiv(tabs, contactUsTab, 'tabs')
 newDiv(header, logoDivContainer, 'logoDivContainer' )
+newDiv(logoDivContainer, grilledDiv, 'grilled')
+newDiv(logoDivContainer, cheesusDiv, 'grilled')
 
 //CREATES BUTTONS IN HEADER
 aboutUsTab.appendChild(aboutUsTabBtnContact);
@@ -47,18 +51,19 @@ aboutUsTabBtnContact.className = 'aboutUsBtn';
 aboutUsTabBtnContact.textContent = 'About Us';
 
 menuTab.appendChild(menuTabBtnContact);
-menuTabBtnContact.className = 'aboutUsBtn';
+menuTabBtnContact.className = 'navBtns';
 menuTabBtnContact.textContent = "Menu";
 
 contactUsTab.appendChild(contactUsTabBtnContact);
-contactUsTabBtnContact.className = 'aboutUsBtn'
+contactUsTabBtnContact.className = 'navBtns'
 contactUsTabBtnContact.textContent = 'Contact Us'
 
 //ADDS TEXT TO HEADER LOGO CONTAINER
-logoDivContainer.textContent = 'Grilled Cheesus'
+grilledDiv.textContent = 'Grilled'
+cheesusDiv.textContent = 'Cheesus'
 
 //ADDS LOGO TO HEADER
-addImage(logoDivContainer, logo, 'cheese.png', 'mainPageLogoImg')
+addImage(header, logo, 'cheese.png', 'mainPageLogoImg')
 
 
 //CREATES MAIN BODY

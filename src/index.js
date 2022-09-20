@@ -5,8 +5,10 @@ import {createMenuPage, clearDom, aboutUsTabBtnMenu, contactUsTabBtnMenu} from '
 
 import {createContactUsPage, aboutUsTabBtnContact,contactUsTabBtnContact, menuTabBtnContact} from './contactpage.js'
 
+import css from './menupage.css'
+
 //RENDERS CONTENT FOR ORIGINAL PAGE LOAD
-createMainPage();
+createMenuPage();
 
 
 
@@ -19,13 +21,13 @@ aboutUsTabBtn.addEventListener('click', function () {
 })
 
 menuTabBtn.addEventListener('click', function () {
-clearDom();
+	clearDom();
 	createMenuPage();
 	
 })
 
 contactUsTabBtn.addEventListener('click', function () {
-clearDom();
+	clearDom();
 	createContactUsPage();
 })
 

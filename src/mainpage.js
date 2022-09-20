@@ -4,10 +4,14 @@ let content = document.getElementById('content');
 const div1 = document.createElement('div')
 const header = document.createElement('header')
 const blurbBox = document.createElement('div')
+const blurbHead = document.createElement('div')
+const blurbBody = document.createElement('div')
 
 //Variables for the logo in the header
 const logoDivContainer = document.createElement('div')
 const logo = document.createElement('img');
+const grilledDiv = document.createElement('div')
+const cheesusDiv = document.createElement('div')
 
 //for the nav buttons
 const tabs = document.createElement('ul');
@@ -43,6 +47,8 @@ newDiv(tabs, aboutUsTab, 'tabs')
 newDiv(tabs, menuTab, 'tabs')
 newDiv(tabs, contactUsTab, 'tabs')
 newDiv(header, logoDivContainer, 'logoDivContainer' )
+newDiv(logoDivContainer, grilledDiv, 'grilled')
+newDiv(logoDivContainer, cheesusDiv, 'cheesus')
 
 
 //CREATES BUTTONS IN HEADER
@@ -51,25 +57,28 @@ aboutUsTabBtn.className = 'aboutUsBtn';
 aboutUsTabBtn.textContent = 'About Us';
 
 menuTab.appendChild(menuTabBtn);
-menuTabBtn.className = 'aboutUsBtn';
+menuTabBtn.className = 'navBtns';
 menuTabBtn.textContent = "Menu";
 
 contactUsTab.appendChild(contactUsTabBtn);
-contactUsTabBtn.className = 'aboutUsBtn'
+contactUsTabBtn.className = 'navBtns'
 contactUsTabBtn.textContent = 'Contact Us'
 
 //ADDS TEXT TO HEADER LOGO CONTAINER
-logoDivContainer.textContent = 'Grilled Cheesus'
+grilledDiv.textContent = 'Grilled'
+cheesusDiv.textContent = 'Cheesus'
 
 //CREATES MAIN BODY
 newDiv(content, div1, 'mainPage' );
 newDiv(div1, blurbBox, 'logoAndBlurb');
+newDiv(blurbBox, blurbHead, 'blurbHead')
+newDiv(blurbBox, blurbBody, 'blurbBody')
+blurbHead.textContent = 'Our Story...'
+blurbBody.textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
 
 
 //ADDS LOGO TO HEADER
-addImage(logoDivContainer, logo, 'cheese.png', 'mainPageLogoImg')
+addImage(header, logo, 'cheese.png', 'mainPageLogoImg')
 }
-
-
 
 
