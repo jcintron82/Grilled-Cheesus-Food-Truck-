@@ -16,19 +16,32 @@ const recDishes1 = document.createElement('div')
 const recDishes2 = document.createElement('div')
 const recDishes3 = document.createElement('div')
 const recDishes4 = document.createElement('div')
+const recDishes5 = document.createElement('div')
+const recDishes6 = document.createElement('div')
 
 
-//VARIABLES FOR THE SIDE DISHES BOX 
-const sideDishesContainer = document.createElement('div')
-const sideDishesHeader = document.createElement('header')
-const sideDishesContentContainer = document.createElement('div')
-const sideDishes1 = document.createElement('div')
-const sideDishes2 = document.createElement('div')
-const sideDishes3 = document.createElement('div')
-const sideDishes4 = document.createElement('div')
-const sideDishesContainerFooter = document.createElement('div')
-const sideDishesFooterSides = document.createElement('div')
-const sideDishesFooterDrinks = document.createElement('div')
+const recDish1ImgContainer = document.createElement('div')
+const recDish2ImgContainer = document.createElement('div')
+const recDish3ImgContainer = document.createElement('div')
+const recDish4ImgContainer = document.createElement('div')
+const recDish5ImgContainer = document.createElement('div')
+const recDish6ImgContainer = document.createElement('div')
+
+const recDish1Img = document.createElement('img');
+const recDish2Img = document.createElement('img');
+const recDish3Img = document.createElement('img');
+const recDish4Img = document.createElement('img');
+const recDish5Img = document.createElement('img');
+const recDish6Img = document.createElement('img');
+
+const recDish1Desc = document.createTextNode('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,')
+const recDish2Desc = document.createTextNode('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,')
+const recDish3Desc = document.createTextNode('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,')
+const recDish4Desc = document.createTextNode('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,')
+const recDish5Desc = document.createTextNode('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,')
+const recDish6Desc = document.createTextNode('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,')
+
+
 
 
 //VARIABLES FOR LOGO IN HEADER
@@ -72,12 +85,12 @@ newDiv(tabs, menuTab, 'tabs')
 newDiv(tabs, contactUsTab, 'tabs')
 newDiv(header, logoDivContainer, 'logoDivContainer' )
 newDiv(logoDivContainer, grilledDiv, 'grilled')
-newDiv(logoDivContainer, cheesusDiv, 'grilled')
+newDiv(logoDivContainer, cheesusDiv, 'cheesus')
 
 
 //CREATES BUTTONS IN HEADER
 aboutUsTab.appendChild(aboutUsTabBtnMenu);
-aboutUsTabBtnMenu.className = 'aboutUsBtn';
+aboutUsTabBtnMenu.className = 'navBtns';
 aboutUsTabBtnMenu.textContent = 'About Us';
 
 menuTab.appendChild(menuTabBtn);
@@ -85,21 +98,24 @@ menuTabBtn.className = 'navBtns';
 menuTabBtn.textContent = "Menu";
 
 contactUsTab.appendChild(contactUsTabBtnMenu);
-contactUsTabBtnMenu.className = 'navBtns'
+contactUsTabBtnMenu.className = 'contactUsBtn'
 contactUsTabBtnMenu.textContent = 'Contact Us'
 
 //ADDS TEXT TO HEADER LOGO CONTAINER
 grilledDiv.textContent = 'Grilled'
 cheesusDiv.textContent = 'Cheesus'
 
-//ADDS LOGO TO HEADER LOGO CONTAINER
-addImage(header, logo, 'cheese.png', 'mainPageLogoImg')
+
+//ADDS LOGO TO HEADER
+
+
+
 
 
 //CREATES MAIN BODY
 newDiv(content, div1, 'menuMainPage' );
 newDiv(div1, recommendedDishesContainer, 'recommendedDishesContainer');
-newDiv(div1, sideDishesContainer, 'sideDishesContainer'  )
+
 
 
 //ADDS DIVS FOR LAYOUT IN RECOMMENDED DISHES CONTAINER 
@@ -109,24 +125,40 @@ newDiv(recommendedDishesContentContainer, recDishes1, 'recDishes')
 newDiv(recommendedDishesContentContainer, recDishes2, 'recDishes')
 newDiv(recommendedDishesContentContainer, recDishes3, 'recDishes')
 newDiv(recommendedDishesContentContainer, recDishes4, 'recDishes');
+newDiv(recommendedDishesContentContainer, recDishes5, 'recDishes');
+newDiv(recommendedDishesContentContainer, recDishes6, 'recDishes');
 
 
-//ADDS DIVS FOR LAYOUT IN SIDE DISHES CONTAINER 
-newDiv(sideDishesContainer, sideDishesHeader, 'recommendedDishesHeader')
-newDiv(sideDishesContainer, sideDishesContentContainer, 'recommendedDishesContentContainer')
-newDiv(sideDishesContentContainer, sideDishes1, 'recDishes')
-newDiv(sideDishesContentContainer, sideDishes2, 'recDishes')
-newDiv(sideDishesContentContainer, sideDishes3, 'recDishes')
-newDiv(sideDishesContentContainer, sideDishes4, 'recDishes');
-newDiv(sideDishesContainer, sideDishesContainerFooter, 'sideDishesContainerFooter');
-newDiv(sideDishesContainerFooter, sideDishesFooterSides, 'sideDishesContainerFooter')
-newDiv(sideDishesContainerFooter, sideDishesFooterDrinks, 'sideDishesContainerFooter')
+newDiv(recDishes1, recDish1ImgContainer, 'recDishesImgContainer')
+newDiv(recDishes2, recDish2ImgContainer, 'recDishesImgContainer')
+newDiv(recDishes3, recDish3ImgContainer, 'recDishesImgContainer')
+newDiv(recDishes4, recDish4ImgContainer, 'recDishesImgContainer')
+newDiv(recDishes5, recDish5ImgContainer, 'recDishesImgContainer')
+newDiv(recDishes6, recDish6ImgContainer, 'recDishesImgContainer')
+
+addImage(recDish1ImgContainer, recDish1Img, 'stock.jpg', 'recDishImgs')
+addImage(recDish2ImgContainer, recDish2Img, 'stock.jpg', 'recDishImgs')
+addImage(recDish3ImgContainer, recDish3Img, 'stock.jpg', 'recDishImgs')
+addImage(recDish4ImgContainer, recDish4Img, 'stock.jpg', 'recDishImgs')
+addImage(recDish5ImgContainer, recDish5Img, 'stock.jpg', 'recDishImgs')
+addImage(recDish6ImgContainer, recDish6Img, 'stock.jpg', 'recDishImgs')
+
+recommendedDishesHeader.textContent = 'Menu';
+recDishes1.appendChild(recDish1Desc)
+recDishes2.appendChild(recDish2Desc)
+recDishes3.appendChild(recDish3Desc)
+recDishes4.appendChild(recDish4Desc)
+recDishes5.appendChild(recDish5Desc)
+recDishes6.appendChild(recDish6Desc)
 
 
 
 
 
-recommendedDishesHeader.textContent = 'dewqdqw'
+
+
+
+
 
 
 }

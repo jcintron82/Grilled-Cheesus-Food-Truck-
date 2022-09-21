@@ -53,7 +53,7 @@ newDiv(logoDivContainer, cheesusDiv, 'cheesus')
 
 //CREATES BUTTONS IN HEADER
 aboutUsTab.appendChild(aboutUsTabBtn);
-aboutUsTabBtn.className = 'aboutUsBtn';
+aboutUsTabBtn.className = 'navBtns';
 aboutUsTabBtn.textContent = 'About Us';
 
 menuTab.appendChild(menuTabBtn);
@@ -61,7 +61,7 @@ menuTabBtn.className = 'navBtns';
 menuTabBtn.textContent = "Menu";
 
 contactUsTab.appendChild(contactUsTabBtn);
-contactUsTabBtn.className = 'navBtns'
+contactUsTabBtn.className = 'contactUsBtn'
 contactUsTabBtn.textContent = 'Contact Us'
 
 //ADDS TEXT TO HEADER LOGO CONTAINER
@@ -77,8 +77,7 @@ blurbHead.textContent = 'Our Story...'
 blurbBody.textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
 
 
-//ADDS LOGO TO HEADER
-addImage(header, logo, 'cheese.png', 'mainPageLogoImg')
+
+
+
 }
-
-
