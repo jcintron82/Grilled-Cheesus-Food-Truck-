@@ -1,4 +1,4 @@
-body { margin: 0; padding: 0; overflow: hidden;}
+body { margin: 0; padding: 0; overflow-x: hidden; }
 
 
 /* the code below controls main header UI */
@@ -7,20 +7,12 @@ body { margin: 0; padding: 0; overflow: hidden;}
 	border-color: black;
 	display: flex;
 	justify-content: center;
-	height: 25vh;
+	height: 23vh;
 	width: 100vw;
 	background-color: black;
 }
 
-.header2{
-	border-style: solid;
-	border-color: black;
-	display: flex;
-	justify-content: center;
-	height: 25vh;
-	width: 100vw;
-	background-color: red;
-}
+
 
 
 .headerLogoContainer{
@@ -44,7 +36,8 @@ body { margin: 0; padding: 0; overflow: hidden;}
 	display: flex;
 	flex-direction: column;
 	color: white;
-	width: 42vw;
+
+	
 
 }
 
@@ -53,13 +46,16 @@ body { margin: 0; padding: 0; overflow: hidden;}
 	border-style: solid;
 	border-color: white;
 	color: white;
+	font-size: 3em;
 }
 
 .cheesus {
 	text-indent: 10vw;
 	border-style: solid;
 	border-color: white;
-	color: white;
+	color: red;
+	font-size: 3em;
+
 }
 
 .tabs {
@@ -68,18 +64,29 @@ body { margin: 0; padding: 0; overflow: hidden;}
 }
 
 .navBtns {
-	margin-top: .5vh;
+	margin-bottom: 3.4vh;
 	height: 5vh;
 	width: 14vh;
-	margin-left: 1vw;
+	margin-left: .5vw;
 }
 
-.aboutUsBtn {
-	margin-top: .5vh;
+.contactUsBtn {
+	margin-bottom: 3.4vh;
 	height: 5vh;
 	width: 14vh;
-	margin-left: 5vw;
+	margin-left: .5vw;
+	margin-right: 11.5vw;
+	
 
+}
+
+.mainPageLogoImg{
+	align-self: flex-end;
+	height: 10vw;
+	width: 10vw;
+	border-radius: 50%;
+	margin-left:5vw;
+	
 }
 
 /*The code below is styling for the body of the main page*/
@@ -88,9 +95,16 @@ body { margin: 0; padding: 0; overflow: hidden;}
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 75vh;
+	height: 100vh;
 	width: 100vw;
 	background-color: lightpink;
+	background-image: url('background.jpg');
+	background-size: cover;
+	background-position: center;
+
+
+
+
 }
 
 .blurbHead {
@@ -112,14 +126,7 @@ body { margin: 0; padding: 0; overflow: hidden;}
 }
 
 
-.mainPageLogoImg{
-	align-self: flex-end;
-	height: 10vw;
-	width: 10vw;
-	border-radius: 50%;
-	margin-left:5vw;
-	
-}
+
 
 /*The code below is styling for the body of the menu page*/
 
@@ -127,63 +134,72 @@ body { margin: 0; padding: 0; overflow: hidden;}
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 75vh;
 	width: 100vw;
 	background-color: #FDFDFD;
 	justify-content: space-evenly;
+	background-image: url('background.jpg');
+	background-size: cover;
+	background-position: center
+
+
 }
-/*The code below is styling for the recommended dishes portion of the menu page*/
+
 .recommendedDishesContainer {
-	height: 65vh;
-	width: 45vw;
-	background-color: #E7E2DF;
+	width: 90vw;
+	display: flex;
+	flex-direction: column;
+
+	
 }
 
 .recommendedDishesHeader{
 	display: flex;
 	border-style: solid;
 	border-color: red;
-	height: 10vh;
+	font-size: 2em;
+	justify-content: center;
+	padding: .5vw;
+
+	
 }
 
 
 .recommendedDishesContentContainer{
+	height: 100vh;
+	width: 60vw;
 	display: flex;
-	flex-wrap:wrap ;
+	flex-wrap:wrap;
+	align-items: center;
+	justify-content: space-evenly;
+	background-color: #E7E2DF;
+	align-self: center;
+
 
 }
 
 .recDishes {
 	border-style: solid;
 	border-color: red;
-	height: 20vh;
+	height: 27vh;
 	width: 20vw;
-	margin: 1vw;
+	margin: 2vw 1vw 1vw 1vw;
+	font-size: 1em;
 }
 
-/*The code below is styling for the side dishes portion of the menu page*/
-
-.sideDishesContainer{
-	height: 65vh;
-	width: 45vw;
-	background-color: black;
+.recDishesImgContainer {
+		display: flex;
+	border-style: solid;
+	border-color: red;
+	height: 10vh;
 }
 
-.mainPageLogoImg{
-	align-self: flex-end;
+.recDishImgs{
 	height: 10vw;
 	width: 10vw;
 	border-radius: 50%;
-	margin-left: 5vw;
-	
 }
 
-.sideDishesContainerFooter{
-	display: flex;
-	border-style: solid;
-	border-color: red;
-	height: 3vh;
-}
+
 
 /*The code below is styling for the body of the contact us page*/
 
@@ -191,25 +207,45 @@ body { margin: 0; padding: 0; overflow: hidden;}
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 75vh;
+	height: 100vh;
 	width: 100vw;
-	background-color: lightpink;
+	background-image: url('background.jpg');
+	background-size: cover;
+	background-position: center;
 }
 
 .contactUsInfoContainer {
 	border-style: solid;
 	border-color: black;
-	height: 50vh;
-	width: 30vw;
-	background-color: purple;
+	height: 65vh;
+	width: 45vw;
+	background-color: white;
+
+}
+
+.phoneNbrDivContainer {
+	border-style: solid;
+	border-color: black;
+	height: 5vh;
+}
+
+.addressDivContainer {
+	border-style: solid;
+	border-color: black;
+	height: 5vh;
+}
+
+.googleMapsContainer {
+	display: flex;
+	justify-content: center;
+
+}
+
+.gMapsImg {
+	max-height: 50vh;
+	width: 40vw;
+	padding: 1vw;
 }
 
 
-.mainPageLogoImg{
-	align-self: flex-end;
-	height: 10vw;
-	width: 10vw;
-	border-radius: 50%;
-	margin-left: 5vw;
-	
-}
+
