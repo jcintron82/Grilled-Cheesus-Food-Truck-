@@ -8,7 +8,7 @@ import {createContactUsPage, aboutUsTabBtnContact,contactUsTabBtnContact, menuTa
 import css from './menupage.css'
 
 //RENDERS CONTENT FOR ORIGINAL PAGE LOAD
-	createMainPage();
+	createMenuPage();
 
 
 
