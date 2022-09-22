@@ -34,12 +34,12 @@ const recDish4Img = document.createElement('img');
 const recDish5Img = document.createElement('img');
 const recDish6Img = document.createElement('img');
 
-const recDish1Desc = document.createTextNode('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,')
-const recDish2Desc = document.createTextNode('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,')
-const recDish3Desc = document.createTextNode('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,')
-const recDish4Desc = document.createTextNode('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,')
-const recDish5Desc = document.createTextNode('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,')
-const recDish6Desc = document.createTextNode('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,')
+const recDish1Desc = document.createTextNode('Our Philly Grilled Cheese. Shaved steak and melted cheddar cheese topped with sauteed peppers and onions on garlic sourdough bread')
+const recDish2Desc = document.createTextNode('Grandmas Flair. A standard OG grilled cheese like we all know and love with 6oz of sliced honey ham and mayo on toasted white bread. Reminds me of days I told grandma I wanted something "new".')
+const recDish3Desc = document.createTextNode('Napoleans Revenge. Two slices of perfectly browned cinnamon french toast, sandwiching a house whipped cream cheese spread which we infuse with fresh strawberries. Topped with powdered sugar and optional chocolate drizzle.')
+const recDish4Desc = document.createTextNode('Take a trip to the Grand Canyon with our Southwest Melt! Spicy picante chicken, black beans, housemade pico de gallo, jalapenos and pepper jack cheese sandwiched between two toasted sourdough slices.')
+const recDish5Desc = document.createTextNode('Grilled Pernil. Pernil - slow roasted pulled pork and a staple in latin households. We took this tender meat and seasoned it with our house blend chipotle adobo. This is topped with cheddar cheese and a garlic aioli.')
+const recDish6Desc = document.createTextNode('The Greek. Melted goat and feta cheese amongst sliced kalamta olives, tomatoes and cucumbers. For when you need something refreshing but still need to scratch that itch. Yeah, you know the one.')
 
 
 
@@ -136,12 +136,12 @@ newDiv(recDishes4, recDish4ImgContainer, 'recDishesImgContainer')
 newDiv(recDishes5, recDish5ImgContainer, 'recDishesImgContainer')
 newDiv(recDishes6, recDish6ImgContainer, 'recDishesImgContainer')
 
-addImage(recDish1ImgContainer, recDish1Img, 'stock.jpg', 'recDishImgs')
-addImage(recDish2ImgContainer, recDish2Img, 'stock.jpg', 'recDishImgs')
-addImage(recDish3ImgContainer, recDish3Img, 'stock.jpg', 'recDishImgs')
-addImage(recDish4ImgContainer, recDish4Img, 'stock.jpg', 'recDishImgs')
-addImage(recDish5ImgContainer, recDish5Img, 'stock.jpg', 'recDishImgs')
-addImage(recDish6ImgContainer, recDish6Img, 'stock.jpg', 'recDishImgs')
+addImage(recDish1ImgContainer, recDish1Img, 'philly.jpg', 'recDishImgs')
+addImage(recDish2ImgContainer, recDish2Img, 'ham.jpg', 'recDishImgs')
+addImage(recDish3ImgContainer, recDish3Img, 'dessert.jpg', 'recDishImgs')
+addImage(recDish4ImgContainer, recDish4Img, 'southwest.webp', 'recDishImgs')
+addImage(recDish5ImgContainer, recDish5Img, 'pulledpork.jpg', 'recDishImgs')
+addImage(recDish6ImgContainer, recDish6Img, 'greek.jpg', 'recDishImgs')
 
 recommendedDishesHeader.textContent = 'Menu';
 recDishes1.appendChild(recDish1Desc)

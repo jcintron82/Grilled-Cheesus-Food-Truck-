@@ -6,6 +6,8 @@ const header = document.createElement('header')
 const blurbBox = document.createElement('div')
 const blurbHead = document.createElement('div')
 const blurbBody = document.createElement('div')
+const ourStoryBox = document.createElement('div')
+const ourStoryBoxSignature = document.createElement('div')
 
 //Variables for the logo in the header
 const logoDivContainer = document.createElement('div')
@@ -73,9 +75,14 @@ newDiv(content, div1, 'mainPage' );
 newDiv(div1, blurbBox, 'logoAndBlurb');
 newDiv(blurbBox, blurbHead, 'blurbHead')
 newDiv(blurbBox, blurbBody, 'blurbBody')
-blurbHead.textContent = 'Our Story...'
-blurbBody.textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
+newDiv(blurbBody, ourStoryBox, 'ourStoryBox')
+newDiv(blurbBody, ourStoryBoxSignature, 'ourStoryBoxSignature')
 
+
+
+blurbHead.textContent = 'From humble beginnings...'
+ourStoryBox.textContent = 'Despite our catchy name and modern sandwich twists, Grilled Cheesus actually comes from very humble beginnings. With roots steeped in all things that make a grilled cheese made by Grandma just *that* much better, the idea was created as a way to bring homestyle comfort food and the modern adventurous spirit together in unison; into one cheesy, holy mess.'
+ourStoryBoxSignature.textContent = '- Bill Lemons, CEO Grilled Cheesus'
 
 
 

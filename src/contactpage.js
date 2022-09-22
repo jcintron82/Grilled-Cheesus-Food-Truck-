@@ -46,6 +46,7 @@ export function createContactUsPage() {
 
 addImage(googleMapsContainer, gMaps, './gMaps.jpg', 'gMapsImg')
 //CREATES THE HEADER
+content.className = 'content'
 newDiv(content, header, 'header');
 newDiv(header, tabs, 'tabsContainer')
 newDiv(tabs, aboutUsTab, 'tabs')
@@ -85,7 +86,7 @@ newDiv(mainContainer, googleMapsContainer, 'googleMapsContainer')
 
 
 //ADDS TEXT AND CONTENT TO MAIN BODY CONTAINERS
-phoneNbrDivContainer.textContent = 'Call us at: 123-456-7890'
+phoneNbrDivContainer.textContent = 'Please call to make an order: 123-456-7890'
 addressDivContainer.textContent = '123 Seasame St, Seattle, USA'
 
 
