@@ -44,7 +44,7 @@ export function createContactUsPage() {
 
 }
 
-addImage(googleMapsContainer, gMaps, './gMaps.jpg', 'gMapsImg')
+addImage(googleMapsContainer, gMaps, './gmaps.jpg', 'gMapsImg')
 //CREATES THE HEADER
 content.className = 'content'
 newDiv(content, header, 'header');
