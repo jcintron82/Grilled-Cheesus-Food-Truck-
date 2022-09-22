@@ -7,7 +7,7 @@ body { margin: 0; padding: 0; overflow-x: hidden; }
 	border-color: black;
 	display: flex;
 	justify-content: center;
-	height: 23vh;
+	height: 15vh;
 	width: 100vw;
 	background-color: black;
 }
@@ -15,12 +15,6 @@ body { margin: 0; padding: 0; overflow-x: hidden; }
 
 
 
-.headerLogoContainer{
-	border-style: solid;
-	border-color: white;
-	width: 21vw;
-	height: 8vh;
-}
 
 .tabsContainer {
 	display: flex;
@@ -43,18 +37,19 @@ body { margin: 0; padding: 0; overflow-x: hidden; }
 
 .grilled {
 	text-indent: 5vw;
-	border-style: solid;
-	border-color: white;
 	color: white;
-	font-size: 3em;
+	border-style: none none solid;
+	border-color: white;
+	font-size: 2.75em;
 }
 
 .cheesus {
 	text-indent: 10vw;
-	border-style: solid;
+	border-style: none none solid;
 	border-color: white;
 	color: red;
-	font-size: 3em;
+	font-size: 2.75em;
+
 
 }
 
@@ -64,22 +59,44 @@ body { margin: 0; padding: 0; overflow-x: hidden; }
 }
 
 .navBtns {
-	margin-bottom: 3.4vh;
+	margin-bottom: 19.5vh;
 	height: 5vh;
-	width: 14vh;
+	width: 16vh;
 	margin-left: .5vw;
+	background-color: #292929;
+	border-style: solid;
+	font-size: 1em;
+	font-family: 'Playfair Display', serif;
+	color: white;
+
 }
 
 .contactUsBtn {
-	margin-bottom: 3.4vh;
+	margin-bottom: 19.5vh;
 	height: 5vh;
-	width: 14vh;
+	width: 16vh;
 	margin-left: .5vw;
-	margin-right: 11.5vw;
-	
+	margin-right: 13vw;
+	background-color: #292929;
+	font-size: 1em;
+	font-family: 'Playfair Display', serif;
+	color: white;
 
 }
 
+.contactUsBtn:hover {
+	margin-bottom: 21vh;
+	background-color:#3D3D3D;
+	cursor: pointer;
+
+}
+
+.navBtns:hover {
+	margin-bottom: 21vh;
+	background-color:#3D3D3D;
+	cursor: pointer;
+
+}
 .mainPageLogoImg{
 	align-self: flex-end;
 	height: 10vw;
@@ -107,22 +124,62 @@ body { margin: 0; padding: 0; overflow-x: hidden; }
 
 }
 
-.blurbHead {
-	border:  solid black;
-	height: 10vh;
-}
-
-.blurbBody {
-	border:  solid black;
-	height: 25vh;
-	text-align: center;
-
-}
 
 .logoAndBlurb {
 	height: 70vh;
 	width: 50vw;
-	background-color: lightgray;
+	background-color: rgba(0, 0, 0, .5);
+	margin-bottom: 8rem;
+}
+
+
+.blurbHead {
+	display: inline-flex;
+	align-items: center;
+	text-indent: 1rem;
+	border-style: none none solid;
+	border-color: black;
+	height: 13vh;
+	width: 50vw;
+	font-size: 2em;
+	font-family: 'Reem Kufi Ink', sans-serif;
+	color: white;
+}
+
+.blurbBody {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 55vh;
+	text-align: center;
+
+}
+
+.ourStoryBox {
+	display: flex;
+	text-align: left;
+	height: 10rem;
+	width: 25rem;
+	border-radius: 30px 30px 0px 0px;
+	padding: .6rem;
+	padding-top: 1rem;
+	background-color: rgba(255, 255, 255, .7);
+	font-family: 'Reem Kufi Ink', sans-serif;
+
+
+}
+
+.ourStoryBoxSignature{
+	height: 10rem;
+	width: 25rem;
+	padding: .6rem;
+	border-radius: 0px 0px 30px 30px;
+	text-align: right;
+	background-color: rgba(255, 255, 255, .7);
+	font-family: 'Cedarville Cursive', cursive;
+	font-size: 1.2em;
+	
 }
 
 
@@ -135,6 +192,7 @@ body { margin: 0; padding: 0; overflow-x: hidden; }
 	justify-content: center;
 	align-items: center;
 	width: 100vw;
+	height: 110vh;
 	background-color: #FDFDFD;
 	justify-content: space-evenly;
 	background-image: url('background.jpg');
@@ -154,11 +212,16 @@ body { margin: 0; padding: 0; overflow-x: hidden; }
 
 .recommendedDishesHeader{
 	display: flex;
-	border-style: solid;
-	border-color: red;
+	border-radius: 50px;
 	font-size: 2em;
 	justify-content: center;
 	padding: .5vw;
+	width: 20vw;
+	align-self: center;
+	align-items: center;
+	margin: .5vw;
+	background-color: rgba(0, 0, 0, .5);
+	color: white;
 
 	
 }
@@ -171,32 +234,43 @@ body { margin: 0; padding: 0; overflow-x: hidden; }
 	flex-wrap:wrap;
 	align-items: center;
 	justify-content: space-evenly;
-	background-color: #E7E2DF;
+	background-color: rgba(0, 0, 0, .4);
 	align-self: center;
+	border-radius: 10px;
+	padding-top: .7rem;
 
 
 }
 
 .recDishes {
-	border-style: solid;
-	border-color: red;
+	background-color: rgba(0, 0, 0, .55);
 	height: 27vh;
 	width: 20vw;
-	margin: 2vw 1vw 1vw 1vw;
+	margin: .5rem .3rem .3rem .3rem;
 	font-size: 1em;
+	text-align: center;
+	color: white;
+	border-radius: 20px;
+	padding-top: .7rem;
+
+	
 }
 
 .recDishesImgContainer {
-		display: flex;
-	border-style: solid;
-	border-color: red;
+	display: flex;
 	height: 10vh;
+	padding: .5vw;
+	justify-content: center;
+	margin-bottom: .5rem;
+
 }
 
 .recDishImgs{
 	height: 10vw;
 	width: 10vw;
-	border-radius: 50%;
+	border-radius: 30px;
+	
+
 }
 
 
@@ -210,29 +284,38 @@ body { margin: 0; padding: 0; overflow-x: hidden; }
 	height: 100vh;
 	width: 100vw;
 	background-image: url('background.jpg');
+
 	background-size: cover;
 	background-position: center;
 }
 
 .contactUsInfoContainer {
-	border-style: solid;
-	border-color: black;
-	height: 65vh;
-	width: 45vw;
-	background-color: white;
-
+	height: 70vh;
+	width: 50vw;
+	margin-bottom: 8rem;
+	background-color: rgba(0, 0, 0, .5);
 }
 
 .phoneNbrDivContainer {
-	border-style: solid;
+	font-family: 'roboto';
+	font-size: 1.5em;
+	border-style: none none solid;
 	border-color: black;
 	height: 5vh;
+	color: white;
+	padding: .5rem;
+	text-align: center;
 }
 
 .addressDivContainer {
-	border-style: solid;
+	font-size: 1.5em;
+	border-style: none none solid;
 	border-color: black;
 	height: 5vh;
+	color: white;
+	padding: .5rem;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
 }
 
 .googleMapsContainer {
