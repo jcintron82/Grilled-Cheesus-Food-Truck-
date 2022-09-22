@@ -14,7 +14,7 @@ import css from './menupage.css'
 
 //EVENT LISTENERS FOR THE ABOUT US MAIN PAGE
 aboutUsTabBtn.addEventListener('click', function () {
-	clearDom()
+	clearDom();
 	createMainPage();
 
 })
